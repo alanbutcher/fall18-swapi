@@ -33,10 +33,15 @@ function _drawError(error) {
 export default class CharactersController {
   constructor() {
     console.log('hello from characters controller')
-    _charactersService.getCharacters(_draw, _drawError)
   }
-
+  
   getCharacters(url) {
     _charactersService.getCharacters(_draw, _drawError, url)
   }
+  
+  showCharacters() {
+    _charactersService.getCharacters(_draw, _drawError)
+  
+}
+
 }
