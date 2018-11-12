@@ -1,3 +1,4 @@
+//@ts-ignore
 let planetAPI = axios.create({
   baseURL: 'https://swapi.co/api/planets/'
 })
